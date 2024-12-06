@@ -1,0 +1,35 @@
+section {
+    padding: 20px;
+    background: #f0f0f0; /* Fondo claro opcional */
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Para adaptarse en pantallas pequeñas */
+    gap: 20px; /* Espacio entre contenedores */
+}
+
+.contenedor > div {
+    width: 200px; /* Ancho fijo para uniformidad */
+    height: 250px; /* Altura fija */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff; /* Fondo blanco para destacar imágenes */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.contenedor > div:hover {
+    transform: scale(1.05); /* Efecto al pasar el mouse */
+}
+
+.imagen-contenedor {
+    width: 100%; /* Ocupa el ancho del contenedor */
+    height: 100%; /* Ocupa la altura del contenedor */
+    object-fit: cover; /* Ajusta la imagen sin distorsión */
+}

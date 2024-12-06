@@ -1,0 +1,34 @@
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Esto permite que las cajas se acomoden mejor en pantallas pequeñas */
+}
+
+.contenedor div {
+    width: 220px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+.imagen-contenedor {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 35px;
+}
+
+.papel { background-color: #3b9eeb; }
+.plastico { background-color: #ffb84d; }
+.vidrio { background-color: #4caf50; }
+.organico { background-color: #a0522d; }
+
+h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
